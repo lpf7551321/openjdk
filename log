@@ -1,0 +1,193 @@
+( cd  ./jdk/make && \
+  make sanity HOTSPOT_IMPORT_CHECK=false JDK_TOPDIR=/home/miracler/work/resources/openjdk/jdk JDK_MAKE_SHARED_DIR=/home/miracler/work/resources/openjdk/jdk/make/common/shared EXTERNALSANITYCONTROL=true SOURCE_LANGUAGE_VERSION=7 TARGET_CLASS_VERSION=7 MILESTONE=internal BUILD_NUMBER=b00 JDK_BUILD_NUMBER=b00 FULL_VERSION=1.7.0-internal-debug-miracler_2016_04_07_21_21-b00 PREVIOUS_JDK_VERSION=1.6.0 JDK_VERSION=1.7.0 JDK_MKTG_VERSION=7 JDK_MAJOR_VERSION=1 JDK_MINOR_VERSION=7 JDK_MICRO_VERSION=0 PREVIOUS_MAJOR_VERSION=1 PREVIOUS_MINOR_VERSION=6 PREVIOUS_MICRO_VERSION=0 ARCH_DATA_MODEL=64 VARIANT=DBG DEBUG_CLASSFILES=true COOKED_BUILD_NUMBER=0 ALT_OUTPUTDIR=/home/miracler/work/resources/openjdk/build/linux-amd64 ALT_LANGTOOLS_DIST=/home/miracler/work/resources/openjdk/build/linux-amd64/langtools/dist ALT_CORBA_DIST=/home/miracler/work/resources/openjdk/build/linux-amd64/corba/dist ALT_JAXP_DIST=/home/miracler/work/resources/openjdk/build/linux-amd64/jaxp/dist ALT_JAXWS_DIST=/home/miracler/work/resources/openjdk/build/linux-amd64/jaxws/dist ALT_HOTSPOT_IMPORT_PATH=/home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/import BUILD_HOTSPOT=true ; )
+make[1]: Entering directory '/home/miracler/work/resources/openjdk/jdk/make'
+make[1]: Leaving directory '/home/miracler/work/resources/openjdk/jdk/make'
+
+Build Machine Information:
+   build machine = mir
+
+Build Directory Structure:
+   CWD = /home/miracler/work/resources/openjdk
+   TOPDIR = .
+   LANGTOOLS_TOPDIR = ./langtools
+   JAXP_TOPDIR = ./jaxp
+   JAXWS_TOPDIR = ./jaxws
+   CORBA_TOPDIR = ./corba
+   HOTSPOT_TOPDIR = ./hotspot
+   JDK_TOPDIR = ./jdk
+
+Build Directives:
+   BUILD_LANGTOOLS = true 
+   BUILD_JAXP = true 
+   BUILD_JAXWS = true 
+   BUILD_CORBA = true 
+   BUILD_HOTSPOT = true 
+   BUILD_JDK    = true 
+   DEBUG_CLASSFILES =  
+   DEBUG_BINARIES =  
+
+Hotspot Settings: 
+      HOTSPOT_BUILD_JOBS  =  
+      HOTSPOT_OUTPUTDIR   = /home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/outputdir 
+      HOTSPOT_EXPORT_PATH = /home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/import 
+ 
+
+
+
+Bootstrap Settings:
+  BOOTDIR = /home/miracler/work/resources/openjdk
+    ALT_BOOTDIR = /home/miracler/work/resources/openjdk
+  BOOT_VER = /bin/sh: 1: /home/miracler/work/resources/openjdk/bin/java: not found [requires at least 1.6]
+  OUTPUTDIR = /home/miracler/work/resources/openjdk/build/linux-amd64
+    ALT_OUTPUTDIR = /home/miracler/work/resources/openjdk/build/linux-amd64
+  ABS_OUTPUTDIR = /home/miracler/work/resources/openjdk/build/linux-amd64
+ 
+Build Tool Settings:
+  SLASH_JAVA = /NOT-SET
+    ALT_SLASH_JAVA = 
+  VARIANT = DBG
+  JDK_DEVTOOLS_DIR = /NOT-SET/devtools
+    ALT_JDK_DEVTOOLS_DIR = 
+  ANT_HOME = 
+  UNIXCOMMAND_PATH = /bin/
+    ALT_UNIXCOMMAND_PATH = 
+  COMPILER_PATH = /usr/bin/
+    ALT_COMPILER_PATH = 
+  DEVTOOLS_PATH = /usr/bin/
+    ALT_DEVTOOLS_PATH = 
+  UNIXCCS_PATH = /usr/ccs/bin/
+    ALT_UNIXCCS_PATH = 
+  USRBIN_PATH = /usr/bin/
+    ALT_USRBIN_PATH = 
+  COMPILER_NAME = GCC5
+  COMPILER_VERSION = GCC5
+  CC_VER = 5.2.1 [requires at least 4.3.0]
+  ZIP_VER = 3.0 [requires at least 2.2]
+  UNZIP_VER = 6.00 [requires at least 5.12]
+  ANT_VER = Error: JAVA_HOME is not defined correctly.   We cannot execute /home/miracler/work/resources/openjdk/bin/java [requires at least 1.7.1]
+  TEMPDIR = /home/miracler/work/resources/openjdk/build/linux-amd64/tmp
+ 
+Build Directives:
+  OPENJDK = true
+  USE_HOTSPOT_INTERPRETER_MODE = 
+  PEDANTIC = 
+  DEV_ONLY = 
+  NO_DOCS = 
+  NO_IMAGES = 
+  TOOLS_ONLY = 
+  INSANE = 
+  COMPILE_APPROACH = parallel
+  PARALLEL_COMPILE_JOBS = 2
+    ALT_PARALLEL_COMPILE_JOBS = 
+  FASTDEBUG = 
+  COMPILER_WARNINGS_FATAL = false
+  COMPILER_WARNING_LEVEL = 
+  SHOW_ALL_WARNINGS = 
+  INCREMENTAL_BUILD = false
+  CC_HIGHEST_OPT = 
+  CC_HIGHER_OPT = 
+  CC_LOWER_OPT = 
+  CXXFLAGS =  -g -fPIC -DCC_NOEX -W -Wall  -Wno-unused -Wno-parentheses -fno-omit-frame-pointer -D_LITTLE_ENDIAN  
+  CFLAGS =  -g   -fno-strict-aliasing -fPIC -W -Wall  -Wno-unused -Wno-parentheses -pipe -fno-omit-frame-pointer -D_LITTLE_ENDIAN  
+  BOOT_JAVA_CMD = /home/miracler/work/resources/openjdk/bin/java -XX:-PrintVMOptions -XX:+UnlockDiagnosticVMOptions -XX:-LogVMOutput -Xmx512m -Xms512m -XX:PermSize=32m -XX:MaxPermSize=160m
+  BOOT_JAVAC_CMD = /home/miracler/work/resources/openjdk/bin/javac  -J-XX:ThreadStackSize=1536 -J-XX:-PrintVMOptions -J-XX:+UnlockDiagnosticVMOptions -J-XX:-LogVMOutput -J-Xmx512m -J-Xms512m -J-XX:PermSize=32m -J-XX:MaxPermSize=160m -encoding ascii -source 6 -target 6 -XDignore.symbol.file=true
+  BOOT_JAR_CMD = /home/miracler/work/resources/openjdk/bin/jar
+  BOOT_JARSIGNER_CMD = /home/miracler/work/resources/openjdk/bin/jarsigner
+  JAVAC_CMD = /NOT-SET/re/jdk/1.7.0/promoted/latest/binaries/linux-amd64/bin/javac  -J-XX:ThreadStackSize=1536 -J-XX:-PrintVMOptions -J-XX:+UnlockDiagnosticVMOptions -J-XX:-LogVMOutput -J-Xmx512m -J-Xms512m -J-XX:PermSize=32m -J-XX:MaxPermSize=160m  -g -source 7 -target 7 -encoding ascii -Xbootclasspath:/home/miracler/work/resources/openjdk/build/linux-amd64/classes 
+  JAVAH_CMD = /NOT-SET/re/jdk/1.7.0/promoted/latest/binaries/linux-amd64/bin/javah -bootclasspath /home/miracler/work/resources/openjdk/build/linux-amd64/classes
+  JAVADOC_CMD = /NOT-SET/re/jdk/1.7.0/promoted/latest/binaries/linux-amd64/bin/javadoc -J-XX:-PrintVMOptions -J-XX:+UnlockDiagnosticVMOptions -J-XX:-LogVMOutput -J-Xmx512m -J-Xms512m -J-XX:PermSize=32m -J-XX:MaxPermSize=160m -bootclasspath /home/miracler/work/resources/openjdk/build/linux-amd64/classes
+ 
+Build Platform Settings:
+  USER = miracler
+  PLATFORM = linux
+  ARCH = amd64
+  LIBARCH = amd64
+  ARCH_FAMILY = amd64
+  ARCH_DATA_MODEL = 64
+  ARCHPROP = amd64
+  OS_VERSION = 4.2.0-16-generic [requires at least 2.6]
+  OS_VARIANT_NAME = Ubuntu
+  OS_VARIANT_VERSION = 15.10
+  MB_OF_MEMORY = 7867
+ 
+GNU Make Settings:
+  MAKE = make
+  MAKE_VER = 4.0 [requires at least 3.81]
+  MAKECMDGOALS = sanity
+  MAKEFLAGS = w
+  SHELL = /bin/sh
+ 
+Target Build Versions:
+  JDK_VERSION = 1.7.0
+  MILESTONE = internal
+  RELEASE = 1.7.0-internal-debug
+  FULL_VERSION = 1.7.0-internal-debug-miracler_2016_04_07_21_21-b00
+  BUILD_NUMBER = b00
+ 
+External File/Binary Locations:
+  USRJDKINSTANCES_PATH = /opt/java
+  BUILD_JDK_IMPORT_PATH = /NOT-SET/re/jdk/1.7.0/promoted/latest/binaries
+    ALT_BUILD_JDK_IMPORT_PATH = 
+  JDK_IMPORT_PATH = /NOT-SET/re/jdk/1.7.0/promoted/latest/binaries/linux-amd64
+    ALT_JDK_IMPORT_PATH = 
+  LANGTOOLS_DIST = 
+    ALT_LANGTOOLS_DIST = /home/miracler/work/resources/openjdk/build/linux-amd64/langtools/dist
+  CORBA_DIST = 
+    ALT_CORBA_DIST = /home/miracler/work/resources/openjdk/build/linux-amd64/corba/dist
+  JAXP_DIST = 
+    ALT_JAXP_DIST = /home/miracler/work/resources/openjdk/build/linux-amd64/jaxp/dist
+  JAXWS_DIST = 
+    ALT_JAXWS_DIST = /home/miracler/work/resources/openjdk/build/linux-amd64/jaxws/dist
+  HOTSPOT_DOCS_IMPORT_PATH = /NO_DOCS_DIR
+    ALT_HOTSPOT_DOCS_IMPORT_PATH = 
+  HOTSPOT_IMPORT_PATH = /home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/import
+    ALT_HOTSPOT_IMPORT_PATH = /home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/import
+  HOTSPOT_SERVER_PATH = /home/miracler/work/resources/openjdk/build/linux-amd64/hotspot/import/jre/lib/amd64/server
+    ALT_HOTSPOT_SERVER_PATH = 
+  CACERTS_FILE = ./../src/share/lib/security/cacerts
+    ALT_CACERTS_FILE = 
+  CUPS_HEADERS_PATH = /usr/include
+    ALT_CUPS_HEADERS_PATH = 
+ 
+OpenJDK-specific settings:
+  FREETYPE_HEADERS_PATH = /usr/include
+    ALT_FREETYPE_HEADERS_PATH = 
+  FREETYPE_LIB_PATH = /usr/lib
+    ALT_FREETYPE_LIB_PATH = 
+ 
+Previous JDK Settings:
+  PREVIOUS_RELEASE_PATH = USING-PREVIOUS_RELEASE_IMAGE
+    ALT_PREVIOUS_RELEASE_PATH = 
+  PREVIOUS_JDK_VERSION = 1.6.0
+    ALT_PREVIOUS_JDK_VERSION = 
+  PREVIOUS_JDK_FILE = 
+    ALT_PREVIOUS_JDK_FILE = 
+  PREVIOUS_JRE_FILE = 
+    ALT_PREVIOUS_JRE_FILE = 
+  PREVIOUS_RELEASE_IMAGE = /home/miracler/work/resources/openjdk
+    ALT_PREVIOUS_RELEASE_IMAGE = 
+
+
+ERROR: You seem to not have installed ALSA 0.9.1 or higher. 
+       Please install ALSA (drivers and lib). You can download the 
+       source distribution from http://www.alsa-project.org or go to 
+       http://www.freshrpms.net/docs/alsa/ for precompiled RPM packages. 
+ 
+ERROR: FreeType version  2.3.0  or higher is required. 
+ make[2]: Entering directory '/home/miracler/work/resources/openjdk/jdk/make/tools/freetypecheck'
+/bin/mkdir -p /home/miracler/work/resources/openjdk/build/linux-amd64/btbins
+rm -f /home/miracler/work/resources/openjdk/build/linux-amd64/btbins/freetype_versioncheck
+Makefile:72: recipe for target '/home/miracler/work/resources/openjdk/build/linux-amd64/btbins/freetype_versioncheck' failed
+make[2]: Leaving directory '/home/miracler/work/resources/openjdk/jdk/make/tools/freetypecheck'
+Failed to build freetypecheck.  
+
+ERROR: You do not have access to valid Cups header files. 
+       Please check your access to 
+           /usr/include/cups/cups.h 
+       and/or check your value of ALT_CUPS_HEADERS_PATH, 
+       CUPS is frequently pre-installed on many systems, 
+       or may be downloaded from http://www.cups.org 
+ 
+Exiting because of the above error(s). 
+ 
+make/sanity-rules.gmk:71: recipe for target 'post-sanity' failed
